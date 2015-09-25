@@ -1,10 +1,10 @@
 var numberCount = 100;
   while (numberCount > 0) {
   numberCount--;
-  fizzbuzz(numberCount);
+  fizzBuzz(numberCount);
 }
 
-function fizzbuzz(num) {
+function fizzBuzz(num) {
   if (num % 3 === 0 && num % 5 === 0) {
     console.log('fizz buzz');
   } else if (num % 5 === 0) {
