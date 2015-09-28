@@ -1,7 +1,8 @@
-var numberCount = 100;
-  while (numberCount > 0) {
-  numberCount--;
-  fizzBuzz(numberCount);
+var numberCount = prompt('Choose a number');
+var stringToNumber = parseInt(numberCount);
+  while (1 < stringToNumber) {
+  stringToNumber--;
+  fizzBuzz(stringToNumber);
 }
 
 function fizzBuzz(num) {
@@ -15,3 +16,4 @@ function fizzBuzz(num) {
     console.log(num);
   }
 }
+fizzBuzz(stringToNumber);
