@@ -1,19 +1,20 @@
-var numberCount = prompt('Choose a number');
-var stringToNumber = parseInt(numberCount);
-  while (1 < stringToNumber) {
-  stringToNumber--;
-  fizzBuzz(stringToNumber);
-}
-
 function fizzBuzz(num) {
-  if (num % 3 === 0 && num % 5 === 0) {
+ num = prompt('choose a number');
+ num = Number(num);
+  if(isNaN(num)) {
+    alert('You must input a number');
+    return false;
+  }
+ for (var i = 1; i <= num; i++) {
+   if (i % 3 === 0 && i % 5 === 0) {
     console.log('fizz buzz');
-  } else if (num % 5 === 0) {
+  } else if (i % 5 === 0) {
     console.log('buzz');
-  } else if (num % 3 === 0) {
+  } else if (i % 3 === 0) {
     console.log('fizz');
   } else {
-    console.log(num);
+    console.log(i);
   }
+ }
 }
-fizzBuzz(stringToNumber);
+fizzBuzz();
